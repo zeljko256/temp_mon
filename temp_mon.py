@@ -32,8 +32,8 @@ SENSORS = [
 ]
 
 # --- how long each sensor is shown, and how often to refetch ---
-ROTATE_SECONDS = 10      # switch sensor every 10 s
-POLL_SECONDS   = 30      # refresh DB every 30 s (per sensor fetch interval)
+ROTATE_SECONDS = 2      # switch sensor every 2 s
+POLL_SECONDS   = 300      # refresh DB every 300 s (per sensor fetch interval) 5 minutes to pull new record from DB
 
 # --- build one mysql command per sensor ---
 def make_cmd(table):
